@@ -2,7 +2,7 @@ import ROOT
 
 '''
 some style suggestions
-* 
+* canvas size: 800 x 670
 * general text font: 43
 * axis titel size: 33
 * axis label size: 29
