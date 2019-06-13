@@ -1,9 +1,9 @@
 # misc
 Useful scripts and miscellania
 
-# To resubmit crab jobs
+# Keep annoying CRAB forever
 `
-for dir in NANOX_180727/*/crab_NANOX_180727/; do crab resubmit --maxmemory 4000 -d $dir; done 
+while true; do for dir in *; do crab resubmit --dir $dir/crab_NANOX_190606/; done; date; sleep 3600; done
 `
 # To submit a job directly without a wrapper file at the IC batch system:
 `
