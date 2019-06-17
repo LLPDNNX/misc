@@ -9,6 +9,7 @@ some style suggestions
 * 'CMS' text font: 63, size: 31
 * additional 'Simulation' text font: 53, size: 31
 * text next to 'CMS' (e.g. lumi) size: 31
+* line width (e.g. ROC curves): at least 2
 '''
 
 ROOT.gROOT.SetStyle("Plain")
