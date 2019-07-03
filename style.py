@@ -10,6 +10,7 @@ some style suggestions
 * additional 'Simulation' text font: 53, size: 31
 * text next to 'CMS' (e.g. lumi) size: 31
 * line width (e.g. ROC curves): at least 2
+* legend text size: 27 - 29
 '''
 
 ROOT.gROOT.SetStyle("Plain")
