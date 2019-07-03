@@ -178,7 +178,8 @@ rSymbol = mhtSymbol+"#lower[0.05]{#scale[1.2]{/}}"+metSymbol
 rSymbol_lc = mhtSymbol+"#lower[0.05]{#scale[1.2]{/}}"+metSymbol_lc
 mzSymbol = "m#lower[0.3]{#scale[0.7]{#mu#mu}}"
 gSymbol = "#tilde{g}"
-mgSymbol = "m#lower[0.2]{#scale[0.8]{"+gSymbol+"}}"
+qbarSymbol = "q#lower[-0.8]{#kern[-0.89]{#minus}}"
+mgSymbol = "m#lower[0.2]{#scale[0.8]{#kern[-0.75]{ }"+gSymbol+"}}"
 chiSymbol = "#tilde{#chi}#lower[-0.5]{#scale[0.65]{0}}#kern[-1.2]{#lower[0.6]{#scale[0.65]{1}}}"
 mchiSymbol = "m#lower[0.2]{#scale[0.8]{"+chiSymbol+"}}"
 
