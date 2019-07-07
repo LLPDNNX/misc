@@ -106,7 +106,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=GMSB",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-0p03_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -114,7 +114,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=GMSB",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-0p1_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -122,7 +122,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-0p3_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -130,7 +130,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-10000_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -138,7 +138,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-1000_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -146,7 +146,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -154,7 +154,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -162,7 +162,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-1_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -170,7 +170,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-30000_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -178,7 +178,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-3000_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -186,7 +186,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-300_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -194,7 +194,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-30_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -202,7 +202,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
     "SMS-T1qqqq_ctau-3_TuneCUETP8M1_13TeV-madgraphMLM-pythia8-vcepaiti":{
@@ -210,7 +210,7 @@
         "params" :[
             "addLLPInfo=True",
             "LLPType=T1qqqLL",
-        ]
+        ],
         "unitsPerJob": 10
     },
 }
