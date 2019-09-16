@@ -167,6 +167,15 @@ def makeLumiText(x1,y1):
     pText.SetTextAlign(33)
     rootObj.append(pTextCMS)
     pText.Draw("Same")
+    
+def makeText(x1,y1,text):
+    pText = ROOT.TPaveText(x1,y1,x1,y1,"NDC")
+    pText.AddText(text)
+    pText.SetTextFont(43)
+    pText.SetTextSize(28)
+    pText.SetTextAlign(22)
+    rootObj.append(pText)
+    pText.Draw("Same")
 
 ptSymbol = "p#kern[-0.8]{ }#lower[0.3]{#scale[0.7]{T}}"
 metSymbol = ptSymbol+"#kern[-2.3]{ }#lower[-0.8]{#scale[0.7]{miss}}"
