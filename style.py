@@ -7,8 +7,7 @@ some style suggestions
 * axis titel size: 33
 * axis label size: 29
 * 'CMS' text font: 63, size: 31
-* additional 'Simulation' text font: 53, size: 31
-* text next to 'CMS' (e.g. lumi) size: 31
+* additional 'Simulation' text font: 53, size: 31 * text next to 'CMS' (e.g. lumi) size: 31
 * line width (e.g. ROC curves): at least 2
 * legend text size: 27 - 29
 '''
@@ -38,7 +37,7 @@ ROOT.gStyle.SetFrameLineStyle(1)
 ROOT.gStyle.SetFrameLineWidth(0)
 
 ROOT.gStyle.SetEndErrorSize(2)
-ROOT.gStyle.SetErrorX(0.)
+#ROOT.gStyle.SetErrorX(0.)
 ROOT.gStyle.SetMarkerStyle(20)
 
 ROOT.gStyle.SetHatchesSpacing(0.9)
@@ -141,7 +140,7 @@ def makeLegend(x1,y1,x2,y2):
     rootObj.append(legend)
     return legend
     
-def makeCMSText(x1,y1,additionalText=None):
+def makeCMSText(x1,y1,additionalText=None,dx=0.088):
     pTextCMS = ROOT.TPaveText(x1,y1,x1,y1,"NDC")
     pTextCMS.AddText("CMS")
     pTextCMS.SetTextFont(63)
@@ -151,7 +150,7 @@ def makeCMSText(x1,y1,additionalText=None):
     pTextCMS.Draw("Same")
 
     if additionalText:
-        pTextAdd = ROOT.TPaveText(x1+0.088,y1,x1+0.088,y1,"NDC")
+        pTextAdd = ROOT.TPaveText(x1+dx,y1,x1+dx,y1,"NDC")
         pTextAdd.AddText(additionalText)
         pTextAdd.SetTextFont(53)
         pTextAdd.SetTextSize(31)
@@ -165,17 +164,19 @@ def makeLumiText(x1,y1):
     pText.SetTextFont(63)
     pText.SetTextSize(31)
     pText.SetTextAlign(33)
-    rootObj.append(pTextCMS)
+    rootObj.append(pText)
     pText.Draw("Same")
-    
-def makeText(x1,y1,text):
+ 
+def makeText(x1,y1,x2,y2,text):
     pText = ROOT.TPaveText(x1,y1,x1,y1,"NDC")
     pText.AddText(text)
     pText.SetTextFont(43)
     pText.SetTextSize(28)
-    pText.SetTextAlign(22)
+    pText.SetTextAlign(11)
     rootObj.append(pText)
-    pText.Draw("Same")
+    pText.Draw("SAME")
+
+
 
 ptSymbol = "p#kern[-0.8]{ }#lower[0.3]{#scale[0.7]{T}}"
 metSymbol = ptSymbol+"#kern[-2.3]{ }#lower[-0.8]{#scale[0.7]{miss}}"
@@ -194,16 +195,14 @@ mchiSymbol = "m#lower[0.2]{#scale[0.8]{"+chiSymbol+"}}"
 
 def ctauSymbol(logctau=-3):
     symbols = [
-        ["c#tau#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[-0.6]{ }#mum"],
-        ["c#tau#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[-0.6]{ }#mum"],
-        ["c#tau#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[-0.6]{ }#mum"],
-        ["c#tau#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[-0.6]{ }mm"],
-        ["c#tau#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[-0.6]{ }mm"],
-        ["c#tau#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[-0.6]{ }mm"],
-        ["c#tau#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[-0.6]{ }m"],
-        ["c#tau#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[-0.6]{ }m"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[0]{ }#mum"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[0]{ }#mum"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[0]{ }#mum"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[0]{ }mm"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[0]{ }mm"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[0]{ }mm"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[0]{ }m"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[0]{ }m"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[0]{ }m"],
     ]
     return symbols[logctau+3]
-    
-    
-    
