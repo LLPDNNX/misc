@@ -195,14 +195,17 @@ mchiSymbol = "m#lower[0.2]{#scale[0.8]{"+chiSymbol+"}}"
 
 def ctauSymbol(logctau=-3):
     symbols = [
-        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[0]{ }#mum"],
-        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[0]{ }#mum"],
-        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[0]{ }#mum"],
-        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[0]{ }mm"],
-        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[0]{ }mm"],
-        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[0]{ }mm"],
-        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[0]{ }m"],
-        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[0]{ }m"],
-        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[0]{ }m"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[-0.2]{ }#mum"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[-0.2]{ }#mum"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[-0.2]{ }#mum"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[-0.2]{ }mm"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[-0.2]{ }mm"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[-0.2]{ }mm"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }1#kern[-0.2]{ }m"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }10#kern[-0.2]{ }m"],
+        ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[-0.2]{ }m"],
     ]
     return symbols[logctau+3]
+    
+    
+    
