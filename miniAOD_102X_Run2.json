@@ -113,7 +113,7 @@
         ]
     },
     "SingleMuon_Run2018D":{
-        "inputDataset": "/SingleMuon/Run2018D-22Jan2019-v2/MINIAOD ",
+        "inputDataset": "/SingleMuon/Run2018D-22Jan2019-v2/MINIAOD",
         "isData": true,
         "params" :[
             "year=2019"
