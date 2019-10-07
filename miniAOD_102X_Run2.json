@@ -155,7 +155,7 @@
         ]
     },
 
-    "DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8=2018":{
+    "DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8-2018":{
         "inputDataset":"/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM",
         "params" :[
             "year=2018"
@@ -218,7 +218,7 @@
         ]
     },
 
-    "WJetsToLNu_2J_TuneCP5_13TeV-amcatnloFXFX-pythia8=2018":{
+    "WJetsToLNu_2J_TuneCP5_13TeV-amcatnloFXFX-pythia8-2018":{
         "inputDataset":"/WJetsToLNu_2J_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM",
         "params" :[
             "year=2018"
