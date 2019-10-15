@@ -249,5 +249,23 @@
             "LLPtype=GMSB"
         ],
         "year": 2018
+    },
+    
+    "ZH_HToSSTobbbb_ZToLL_MH-125_MS-40_ctauS-10000_TuneCUETP8M1_13TeV-powheg-pythia8":{
+        "inputDataset":"/ZH_HToSSTobbbb_ZToLL_MH-125_MS-40_ctauS-10000_TuneCUETP8M1_13TeV-powheg-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+        "params": [
+            "addLLPInfo=True",
+            "LLPtype=HToSS"
+        ],
+        "year": 2016
+    },
+
+    "ZH_HToSSTobbbb_ZToLL_MH-125_MS-15_ctauS-10000_TuneCUETP8M1_13TeV-powheg-pythia8":{
+        "inputDataset":"/ZH_HToSSTobbbb_ZToLL_MH-125_MS-15_ctauS-10000_TuneCUETP8M1_13TeV-powheg-pythia8/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
+        "params": [
+            "addLLPInfo=True",
+            "LLPtype=HToSS"
+        ],
+        "year": 2016
     }
 }
