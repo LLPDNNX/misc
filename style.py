@@ -122,6 +122,22 @@ def makeColorTable(reverse=False):
     ROOT.gStyle.SetNumberContours(200)
 
 
+#colors used in limits
+colorU = newColorHLS(0.76,0.45,0.8)
+colorUsys = newColorHLS(0.72,0.9,0.5)
+colorU_SUS = newColorHLS(0.68,0.3,0.7)
+
+colorC = newColorHLS(0.07,0.45,0.8)
+colorCsys = newColorHLS(0.07,0.9,0.5)
+colorC_SUS = newColorHLS(0.0,0.4,0.8)
+
+#colors used in CR plots
+znunuColor = newColorRGB(0.3,0.75,0.95)
+multijetColor = newColorRGB(0.85,0.85,0.85)
+topBkgColor = newColorRGB(0.98,0.8,0.05)
+dyColor = newColorRGB(0.3,0.75,0.95)
+wjetColor = newColorRGB(0.36,0.78,0.4)
+    
 
 rootObj = []
 
