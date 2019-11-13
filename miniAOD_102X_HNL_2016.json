@@ -97,8 +97,8 @@
         "year": 2016
     },
     
-    "HNL_M-5_V-0.00178044938148_mu_Dirac-2016":{
-        "userInputFiles": "HNL/HeavyNeutrino_lljj_M-5_V-0p00178044938148_mu_Dirac_massiveAndCKM_LO.txt",
+    "HeavyNeutrino_lljj_M-5_V-0p00178044938148_mu_Dirac_massiveAndCKM_LO-2016":{
+        "userInputFiles": "HNL/HeavyNeutrino_lljj_M-5_V-0.00178044938148_mu_Dirac_massiveAndCKM_LO.txt",
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
