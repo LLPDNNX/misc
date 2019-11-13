@@ -95,5 +95,14 @@
             "LLPtype=HToSS"
         ],
         "year": 2016
+    },
+    
+    "HeavyNeutrino_lljj_M-5_V-0.00178044938148_mu_Dirac_massiveAndCKM_LO":{
+        "userInputFiles": "HNL/HeavyNeutrino_lljj_M-5_V-0.00178044938148_mu_Dirac_massiveAndCKM_LO.txt",
+        "params": [
+            "addLLPInfo=True",
+            "LLPtype=HNL"
+        ],
+        "year": 2016
     }
 }
