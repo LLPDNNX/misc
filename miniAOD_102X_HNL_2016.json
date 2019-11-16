@@ -60,12 +60,12 @@
         "year": 2016
     },
     
-    "ST_t-channel_top_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1-2016":{
+    "ST_t-channel_top_4f_inclusiveDecays_13TeV-powhegV2-pythia8_TuneCUETP8M1-2016":{
         "inputDataset":"/ST_t-channel_top_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
         "year": 2016
     },
     
-    "ST_t-channel_antitop_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1-2016":{
+    "ST_t-channel_antitop_4f_inclusiveDecays_13TeV-powhegV2-pythia8_TuneCUETP8M1-2016":{
         "inputDataset":"/ST_t-channel_antitop_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1/RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3-v1/MINIAODSIM",
         "year": 2016
     },
@@ -99,6 +99,7 @@
     
     "HeavyNeutrino_lljj_M-10_V-0p000208566536146_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-10_V-0.000208566536146_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -107,6 +108,7 @@
     },
     "HeavyNeutrino_lljj_M-10_V-0p00112249721603_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-10_V-0.00112249721603_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -115,6 +117,7 @@
     },
     "HeavyNeutrino_lljj_M-15_V-3p02158898595e-05_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-15_V-3.02158898595e-05_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -123,6 +126,7 @@
     },
     "HeavyNeutrino_lljj_M-15_V-6p76017751246e-05_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-15_V-6.76017751246e-05_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -131,6 +135,7 @@
     },
     "HeavyNeutrino_lljj_M-10_V-0p00112249721603_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-10_V-0.00112249721603_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -139,6 +144,7 @@
     },
     "HeavyNeutrino_lljj_M-1_V-0p13416407865_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-1_V-0.13416407865_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -147,6 +153,7 @@
     },
     "HeavyNeutrino_lljj_M-1_V-0p300333148354_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-1_V-0.300333148354_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -155,6 +162,7 @@
     },
     "HeavyNeutrino_lljj_M-20_V-1p22474487139e-05_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-20_V-1.22474487139e-05_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -163,6 +171,7 @@
     },
     "HeavyNeutrino_lljj_M-20_V-2p73495886624e-05_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-20_V-2.73495886624e-05_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -171,6 +180,7 @@
     },
     "HeavyNeutrino_lljj_M-2_V-0p0137840487521_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-2_V-0.0137840487521_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -179,6 +189,7 @@
     },
     "HeavyNeutrino_lljj_M-2_V-0p0157162336455_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-2_V-0.0157162336455_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -187,6 +198,7 @@
     },
         "HeavyNeutrino_lljj_M-2_V-0p0307896086367_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-2_V-0.0307896086367_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -195,6 +207,7 @@
     },
     "HeavyNeutrino_lljj_M-3_V-0p00443846820423_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-3_V-0.00443846820423_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -203,6 +216,7 @@
     },
     "HeavyNeutrino_lljj_M-3_V-0p0140356688476_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-3_V-0.0140356688476_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -211,6 +225,7 @@
     },
     "HeavyNeutrino_lljj_M-4_V-0p00183575597507_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-4_V-0.00183575597507_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -219,6 +234,7 @@
     },
     "HeavyNeutrino_lljj_M-4_V-0p00354964786986_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-4_V-0.00354964786986_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -227,6 +243,7 @@
     },
     "HeavyNeutrino_lljj_M-5_V-0p000920326029187_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-5_V-0.000920326029187_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -235,6 +252,7 @@
     },
     "HeavyNeutrino_lljj_M-5_V-0p00178044938148_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-5_V-0.00178044938148_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -243,6 +261,7 @@
     },
     "HeavyNeutrino_lljj_M-5_V-0p0065574385243_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HeavyNeutrino_lljj_M-5_V-0.0065574385243_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -251,6 +270,7 @@
     },
     "HeavyNeutrino_lljj_M-6_V-0p000522494019105_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-6_V-0.000522494019105_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -259,6 +279,7 @@
     },
     "HeavyNeutrino_lljj_M-6_V-0p00101488915651_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-6_V-0.00101488915651_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -267,6 +288,7 @@
     },
     "HeavyNeutrino_lljj_M-8_V-0p000415932686862_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-8_V-0.000415932686862_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -275,6 +297,7 @@
     },
     "HeavyNeutrino_lljj_M-8_V-0p00214242852856_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-8_V-0.00214242852856_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
@@ -283,6 +306,7 @@
     },
      "HeavyNeutrino_lljj_M-8_V-0p00363318042492_mu_Dirac_massiveAndCKM_LO-2016":{
         "userInputFiles": "HNL/HeavyNeutrino_lljj_M-8_V-0.00363318042492_mu_Dirac_massiveAndCKM_LO.txt",
+        "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
             "LLPtype=HNL"
