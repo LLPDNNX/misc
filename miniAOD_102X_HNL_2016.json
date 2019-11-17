@@ -260,7 +260,7 @@
         "year": 2016
     },
     "HeavyNeutrino_lljj_M-5_V-0p0065574385243_mu_Dirac_massiveAndCKM_LO-2016":{
-        "userInputFiles": "HeavyNeutrino_lljj_M-5_V-0.0065574385243_mu_Dirac_massiveAndCKM_LO.txt",
+        "userInputFiles": "HNL/HeavyNeutrino_lljj_M-5_V-0.0065574385243_mu_Dirac_massiveAndCKM_LO.txt",
         "unitsPerJob": 1,
         "params": [
             "addLLPInfo=True",
