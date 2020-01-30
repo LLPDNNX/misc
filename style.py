@@ -1,6 +1,6 @@
 import ROOT
 import numpy
-import cstyles
+import ctypes
 
 '''
 some style suggestions
