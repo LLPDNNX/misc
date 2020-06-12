@@ -1,5 +1,4 @@
 import ROOT
-import numpy
 import ctypes
 
 '''
@@ -72,13 +71,13 @@ ROOT.gStyle.SetPalette(1)
 ROOT.gStyle.SetPaintTextFormat(".1f")
 
 colors = []
-    
+
 def newColorRGB(red,green,blue):
     newColorRGB.colorindex+=1
     color=ROOT.TColor(newColorRGB.colorindex,red,green,blue)
     colors.append(color)
     return color
-    
+
 def HLS2RGB(hue,light,sat):
     r, g, b = ctypes.c_int(), ctypes.c_int(), ctypes.c_int()
     ROOT.TColor.HLS2RGB(
@@ -88,11 +87,11 @@ def HLS2RGB(hue,light,sat):
         r,g,b
     )
     return r.value/255.,g.value/255.,b.value/255.
-    
+
 def newColorHLS(hue,light,sat):
     r,g,b = HLS2RGB(hue,light,sat)
     return newColorRGB(r,g,b)
-    
+
 newColorRGB.colorindex=301
 
 def makeColorTable(reverse=False):
@@ -101,7 +100,7 @@ def makeColorTable(reverse=False):
         [0.,newColorHLS(0.56, 0.65, 0.7)],
         [0.,newColorHLS(0.52, 1., 1.)],
     ]
-    
+
     if reverse:
         colorList = reversed(colorList)
 
@@ -124,24 +123,6 @@ def makeColorTable(reverse=False):
     ROOT.gStyle.SetNumberContours(200)
 
 
-#colors used in limits
-colorU = newColorHLS(0.76,0.45,0.8)
-colorUsys = newColorHLS(0.72,0.9,0.5)
-colorU_SUS = newColorHLS(0.68,0.3,0.7)
-
-colorC = newColorHLS(0.07,0.45,0.8)
-colorCsys = newColorHLS(0.07,0.9,0.5)
-colorC_SUS = newColorHLS(0.0,0.4,0.8)
-
-#colors used in CR plots
-znunuColor = newColorRGB(0.3,0.75,0.95)
-multijetColor = newColorRGB(0.85,0.85,0.85)
-topBkgColor = newColorRGB(0.98,0.8,0.05)
-dyColor = newColorRGB(0.3,0.75,0.95)
-wjetColor = newColorRGB(0.36,0.78,0.4)
-
-mistagColor = newColorHLS(0.71,0.87,0.6)
-    
 
 rootObj = []
 
@@ -159,7 +140,7 @@ def makeLegend(x1,y1,x2,y2):
     legend.SetFillStyle(0)
     rootObj.append(legend)
     return legend
-    
+
 def makeCMSText(x1,y1,additionalText=None,dx=0.088):
     pTextCMS = ROOT.TPaveText(x1,y1,x1,y1,"NDC")
     pTextCMS.AddText("CMS")
@@ -177,21 +158,29 @@ def makeCMSText(x1,y1,additionalText=None,dx=0.088):
         pTextAdd.SetTextAlign(13)
         rootObj.append(pTextAdd)
         pTextAdd.Draw("Same")
-    
-def makeLumiText(x1,y1):
+
+def makeLumiText(x1, y1, lumi, year):
     pText = ROOT.TPaveText(x1,y1,x1,y1,"NDC")
-    pText.AddText("36 fb#lower[-0.8]{#scale[0.7]{-1}}")
+    pText.AddText(str(lumi)+" fb#lower[-0.8]{#scale[0.7]{-1}}")
     pText.SetTextFont(63)
     pText.SetTextSize(31)
     pText.SetTextAlign(33)
     rootObj.append(pText)
     pText.Draw("Same")
- 
+    pYear = ROOT.TPaveText(x1+0.11,y1,x1+0.11,y1,"NDC")
+    pYear.AddText("(%s)" % (year))
+    pYear.SetTextFont(13)
+    pYear.SetTextSize(31)
+    pYear.SetTextAlign(33)
+    rootObj.append(pYear)
+    pYear.Draw("Same")
+
+
 def makeText(x1,y1,x2,y2,text):
     pText = ROOT.TPaveText(x1,y1,x1,y1,"NDC")
     pText.AddText(text)
     pText.SetTextFont(43)
-    pText.SetTextSize(28)
+    pText.SetTextSize(25)
     pText.SetTextAlign(11)
     rootObj.append(pText)
     pText.Draw("SAME")
@@ -226,6 +215,37 @@ def ctauSymbol(logctau=-3):
         ["c#tau#lower[0.3]{#scale[0.5]{0}}#kern[-0.5]{ }=#kern[-0.5]{ }100#kern[-0.2]{ }m"],
     ]
     return symbols[logctau+3]
-    
-    
-    
+
+
+def clamp(val, minimum=0, maximum=255):
+    if val < minimum: return minimum
+    if val > maximum:
+        return maximum
+    return int(val)
+
+def colorscale(hexstr, scalefactor):
+    """
+    Scales a hex string by ``scalefactor``. Returns scaled hex string.
+
+    To darken the color, use a float value between 0 and 1.
+    To brighten the color, use a float value greater than 1.
+
+    >>> colorscale("#DF3C3C", .5)
+    #6F1E1E
+    >>> colorscale("#52D24F", 1.6)
+    #83FF7E
+    >>> colorscale("#4F75D2", 1)
+    #4F75D2
+    """
+
+    hexstr = hexstr.strip('#')
+
+    if scalefactor < 0 or len(hexstr) != 6:
+        return hexstr
+
+    r, g, b = int(hexstr[:2], 16), int(hexstr[2:4], 16), int(hexstr[4:], 16)
+    r = clamp(r * scalefactor)
+    g = clamp(g * scalefactor)
+    b = clamp(b * scalefactor)
+
+    return "#%02x%02x%02x" % (r, g, b)
